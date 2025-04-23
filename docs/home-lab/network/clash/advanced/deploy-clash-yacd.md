@@ -34,7 +34,7 @@ Docker 可以在任何支持它运行的环境中启动这些应用，从而避�
 |-- docker-compose.yaml
 ```
 
-其中, `geoip.metada`为全球IP库，可以实现各个国家的IP信息解析和地理定位，没有这个文件clash是无法运行的，需要提前下载好放入config文件挂载的位置。
+其中, `geoip.metadb`为全球IP库，可以实现各个国家的IP信息解析和地理定位，没有这个文件clash是无法运行的，需要提前下载好放入config文件挂载的位置。
 
 ## docker-compose.yaml 示例
 
@@ -70,16 +70,11 @@ services:
 networks:
   clash-net:
     driver: bridge
-
+    
 ```
 
 ## 访问方式
 
-Yacd 面板地址：http://<nas ip>:8080
+Yacd 面板地址：`http://<nas ip>:8080`
 
-Clash 控制接口：http://<nas ip>:9090
-
-代理端口：
-
-HTTP：<nas ip>:7890
-SOCKS5：<nas ip>:7891
+Clash 控制接口：`http://<nas ip>:9090`
