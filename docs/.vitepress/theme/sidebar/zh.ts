@@ -1,14 +1,12 @@
 import {DefaultTheme} from 'vitepress';
 
 export const zhSidebar: DefaultTheme.Sidebar = {
-    '/core-tech/frontend/vitepress/': [{
-        text: 'Vitepress',
+    '/home-lab/services/': [{
+        text: 'KMS服务',
         collapsed: false,
         items: [
-            {text: '首页', link: '/core-tech/frontend/vitepress/'},
-            {text: '部署', link: '/core-tech/frontend/vitepress/basic/deploy'},
-            {text: '国际化', link: '/core-tech/frontend/vitepress/advanced/i18n'},
-            {text: '页面美化', link: '/core-tech/frontend/vitepress/advanced/customize'}
+            {text: 'Windows KMS 激活指南', link: '/home-lab/services/kms/basic/guide'},
+            {text: 'Docker搭建本地KMS', link: '/home-lab/services/kms/advanced/docker-kms'},
         ]
     }],
 }
