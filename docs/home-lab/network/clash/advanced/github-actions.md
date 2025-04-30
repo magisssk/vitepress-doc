@@ -3,7 +3,7 @@ title: Clash 规则自动化部署方案
 description: 使用GitHub Actions和jsDelivr实现Clash规则的自动化发布与多端同步。
 ---
 
-# Clash 规则自动化部署方案（GitHub + jsDelivr）
+# Clash 规则自动化部署方案(GitHub + jsDelivr)
 
 ## 背景
 
