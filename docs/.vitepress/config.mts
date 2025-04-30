@@ -1,35 +1,15 @@
 import {defineConfig} from 'vitepress';
+import {sharedConfig} from './theme/config/share';
+import {zhConfig} from './theme/config/zh';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-    title: "My Awesome Project",
-    description: "A VitePress Site",
-    base: "/vitepress-doc/",
-    themeConfig: {
-        // https://vitepress.dev/reference/default-theme-config
-        nav: [
-            {text: 'Home', link: '/'},
-            {text: 'Examples', link: '/markdown-examples'}
-        ],
-
-        sidebar: [
-            {
-                text: 'Examples',
-                items: [
-                    {text: 'Markdown Examples', link: '/markdown-examples'},
-                    {text: 'Runtime API Examples', link: '/api-examples'}
-                ]
-            }
-        ],
-
-        socialLinks: [
-            {icon: 'github', link: 'https://github.com/magisssk/vitepress-doc'}
-        ],
-
-
-        editLink: {
-            pattern: 'https://github.com/magisssk/vitepress-doc/edit/master/docs/:path',
-            text: 'Edit this page on GitHub'
+    sharedConfig,
+    locales: { // 多语言
+        root: {
+            label: '简体中文',
+            lang: 'zh',
+            ...zhConfig
         }
     }
 })
